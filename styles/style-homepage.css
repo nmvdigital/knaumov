@@ -1,0 +1,101 @@
+text {
+  font-family: 'Rubik', sans-serif;
+}
+
+.big-text {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Rubik', sans-serif;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("IMG-1630-1 (1).jpg");
+
+  /* Set a specific height */
+  height: 1200px;
+  position: relative;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  transition: background-color 0.5s;
+}
+
+
+button:hover {
+  background-color: rgb(224, 224, 224);
+  border: none;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+button:active {
+  background-color: rgb(121, 121, 121);
+  border: none;
+  transition: background-color 0.5s;
+}
+
+.announcments {
+  margin-top: 0px;
+  background-color: #0D5DD7;
+  color: white;
+}
+
+.first-slide {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: max-content;
+}
+
+.second-slide {
+
+  display: grid;
+  justify-content: center;
+}
+
+.draggin:hover {
+  transform: translateY(-10px);
+  transition: all 0.7s;
+}
+
+.draggin {
+  transition: all 0.7s;
+}
+
+.mainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 300px;
+  justify-content: center;
+  align-items: top;
+  margin-bottom: 200px;
+}
+
+.expertise {
+  display:grid;
+  background-color: #F4F4F4;
+  justify-content: center;
+}
+
+.results {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 300px 600px;
+}
+
+form {
+  align-items: center;
+}
+
+form:hover {
+  cursor: pointer;
+}
