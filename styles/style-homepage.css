@@ -154,7 +154,7 @@ form:hover {
 
 
 .adv-cont {
-  display: grid; grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px; gap: 10px; justify-content: center; align-items: center; margin-bottom: 10px;
+  display: grid; grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px; gap: 40px; justify-content: center; align-items: center; margin-bottom: 10px;
 }
 
 .soc-but:hover {
@@ -166,39 +166,11 @@ form:hover {
   transition: all 0.7s;
 }
 
-@media (max-width: 720px){
 
 
-  .homepage-h {
-    right: 0;
-  }
-  
-  .mainer {
-    grid-template-rows: 1fr 1fr;
-  }
-
-  .links-soc {
-    grid-template-rows: 500px 500px;
-  }
-}
-
-
-@media (min-width: 721px){
-  .mainer {
-    grid-template-columns: 1fr 1fr;
-  }
-  .res1 {
-    grid-template-columns: 300px 300px 300px;
-  }
-  .cst1 {
-    display: grid; grid-template-columns: 300px 300px 300px; gap: 100px; justify-content: center; align-items: center; margin-bottom: 10px; transition: all 0.7s;
-  }
-  
-  .cst2 {
-    display: grid; grid-template-columns: 300px 300px; gap: 100px; justify-content: center; align-items: center; transition: all 0.7s;
-  }
-  .links-soc {
-    display: grid; grid-template-columns: 500px 500px; gap: 100px; justify-content: center; align-items: center; margin-bottom: 200px; margin-top: 200px;
+@media (max-height: 1300px){
+  .parallax {
+    height: 2000px;
   }
 
 }
