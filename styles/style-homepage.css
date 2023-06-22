@@ -28,6 +28,11 @@ button {
   transition: background-color 0.5s;
 }
 
+.homepage-h {
+  right:400px; 
+  right:500px; 
+  right:350px; 
+}
 
 button:hover {
   background-color: rgb(224, 224, 224);
@@ -68,9 +73,19 @@ button:active {
   transition: all 0.7s;
 }
 
+.draggin-adv:hover {
+  transform: translateY(-10px);
+  transition: all 0.7s;
+}
+
+.draggin-adv {
+  transition: all 0.7s;
+  width: 800px;
+}
+
 .mainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 100px;
   margin-left: 200px;
   margin-right: 200px;
@@ -92,10 +107,98 @@ button:active {
   grid-template-rows: 300px 600px;
 }
 
+.res1 {
+  display: grid; grid-template-rows: 300px 300px 300px; gap: 100px; align-items: top; justify-content: center;
+}
+
 form {
   align-items: center;
 }
 
 form:hover {
   cursor: pointer;
+}
+
+.homepage-h {
+  position: absolute; 
+  right:400px; 
+  top: 500px; 
+  width: 600px; 
+  border-radius: 40px; 
+  text-align: center;
+}
+
+.about-me {
+  width: px;
+}
+
+.mobile-me {
+  opacity: 0;
+  height: 0px;
+}
+
+
+
+.cst1:hover {
+  transform: translateY(-10px);
+  transition: all 0.7s;
+}
+
+
+.cst2:hover {
+  transform: translateY(-10px);
+  transition: all 0.7s;
+}
+
+
+
+
+.adv-cont {
+  display: grid; grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px; gap: 10px; justify-content: center; align-items: center; margin-bottom: 10px;
+}
+
+.soc-but:hover {
+  transform: translateY(-10px);
+  transition: all 0.7s;
+}
+
+.soc-but {
+  transition: all 0.7s;
+}
+
+@media (max-width: 720px){
+
+
+  .homepage-h {
+    right: 0;
+  }
+  
+  .mainer {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .links-soc {
+    grid-template-rows: 500px 500px;
+  }
+}
+
+
+@media (min-width: 721px){
+  .mainer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .res1 {
+    grid-template-columns: 300px 300px 300px;
+  }
+  .cst1 {
+    display: grid; grid-template-columns: 300px 300px 300px; gap: 100px; justify-content: center; align-items: center; margin-bottom: 10px; transition: all 0.7s;
+  }
+  
+  .cst2 {
+    display: grid; grid-template-columns: 300px 300px; gap: 100px; justify-content: center; align-items: center; transition: all 0.7s;
+  }
+  .links-soc {
+    display: grid; grid-template-columns: 500px 500px; gap: 100px; justify-content: center; align-items: center; margin-bottom: 200px; margin-top: 200px;
+  }
+
 }

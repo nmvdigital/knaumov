@@ -2,6 +2,7 @@ button {
   background-color: rgb(255, 255, 255);
   border: none;
   transition: background-color 0.5s;
+  color: black;
 }
 
 
@@ -21,7 +22,7 @@ button:active {
   background-image: url("IMG-1630-1 (1).jpg");
 
   /* Set a specific height */
-  height: 1000px;
+  height: 900px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -31,10 +32,10 @@ button:active {
 }
 
 .logo {
-  width: 100px;
-  padding-left: 200px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  width: 50px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   flex: 1;
   display: inline-block;
 }
@@ -48,9 +49,8 @@ span {
 }
 
 .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 70px 1fr;
   position: absolute;
   background-color: rgba(255, 255, 255, 0);
   width: 100%;
@@ -58,22 +58,18 @@ span {
   left: 0;
   right: 0;
   z-index: 1;
-  opacity: 0.2;
+  opacity: 1;
   transition: opacity 0.5s;
 }
 
-.header:hover {
-  opacity: 1;
-}
 
 .menu {
-  flex: 1;
   display: grid;
-  grid-template-columns: 100px 100px 100px;
+  grid-template-columns: 80px 80px 80px;
   height: 40px;
   column-gap: 60px;
-  margin-top: 40px;
-  padding-top: 40px;
+  margin-top: 20px;
+  padding-top: 0px;
 }
 
 .menubutton {

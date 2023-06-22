@@ -44,3 +44,13 @@ body {
 .language__img_active {
     opacity: 1;
 }
+
+
+@media (max-width: 720px){
+    .language {
+        right: 0;
+        flex-direction: row;
+    }
+
+
+}
