@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="styles/style-homepage.css">
-    <link rel="stylesheet" href="styles/timeline.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <link rel="stylesheet" href="styles/style-homepage.css" media="">
+    <link rel="stylesheet" href="styles/timeline.css" media="">
+    <link rel="stylesheet" href="styles/header.css" media="">
+    <link rel="stylesheet" href="styles/footer.css" media="">
+    <link rel="stylesheet" href="styles/style-homepageMobile.css" media="(max-width: 720px)">
+    <link rel="stylesheet" href="styles/timelineMobile.css" media="(max-width: 720px)">
+    <link rel="stylesheet" href="styles/headerMobile.css" media="(max-width: 720px)">
+    <link rel="stylesheet" href="styles/footerMobile.css" media="(max-width: 720px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
@@ -18,11 +23,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="js/google-translate.js"></script>
     <title>Главная</title>
-
-
-
   </head>
-  <body style="margin: 0;opacity:0;transition:.5s;">
+  <body style="margin: 0;opacity:0;transition:.5s;overflow-x: hidden;">
     <div class="header">
       <div style="background-color: rgba(255, 255, 255, 0); flex: 1;">
         <img onclick="document.location='home-page.html'" class="logo" src="images\Naumov Perspecy — копия.png">
@@ -42,11 +44,16 @@
 
     </div> 
       <div class="parallax">        
-          <div  class="draggin" style="position: absolute; right:400px; top: 500px; width: 600px; border-radius: 40px; text-align: center;"><p style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;font-weight: bold; font-size: 60px; color: rgb(255, 255, 255);">Кирилл Наумов</p></div>
-          <div  class="draggin" style="position: absolute; right:500px; top: 650px; width: 400px; border-radius: 40px; text-align: center;"><p style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;font-size: 40px; color: rgb(255, 255, 255);">Ваша <span>проблема.</span></p></div>
-          <div  class="draggin" style="position: absolute; right:350px; top: 750px; width: 400px; border-radius: 40px; text-align: center;"><p style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;font-size: 40px; color: rgb(255, 255, 255);">Моя <span>работа.</span></p></div>
+          
+        <div  class="draggin" style="position: absolute; right:400px; top: 500px; width: 600px; border-radius: 40px; text-align: center;"><p style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;font-weight: bold; font-size: 60px; color: rgb(255, 255, 255);">Кирилл Наумов</p></div>
+        <div  class="draggin" style="position: absolute; right:500px; top: 650px; width: 400px; border-radius: 40px; text-align: center;"><p style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;font-size: 40px; color: rgb(255, 255, 255);">Ваша <span>проблема.</span></p></div>
+        <div  class="draggin" style="position: absolute; right:350px; top: 750px; width: 400px; border-radius: 40px; text-align: center;"><p style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;font-size: 40px; color: rgb(255, 255, 255);">Моя <span>работа.</span></p></div>
       </div>
-
+      <div class="mobile-me">
+        <p>Кирилл Наумов</p>
+        <p>Ваша <span>проблема.</span></p>
+        <p>Моя <span>работа.</span></p>
+      </div>
       <div class="announcments">
         
         <p class="animate__animated animate__fadeIn" style="text-align: center; padding-top: 40px; padding-bottom: 40px; font-size: 30px;">20 лет опыта работы в сфере уголовного судопроизводства, защиты и представительства по уголовным делам</p>
@@ -54,7 +61,7 @@
       </div>  
       <div class="second-slide" style="position: relative; margin-bottom: 100px;">
         <!--<div class="draggin" style="position: absolute; left: 20px; top: 250px;"><img style="opacity: 0.8;" src="images\image_processing20200511-1138-jcu8lv.png"></div>-->
-        <div style="width: 1000px;">
+        <div class="about">
 
           <p class="big-text" style="text-align: center; font-size: 40px;">Образование</p>
           <div class="timeline">
@@ -89,7 +96,7 @@
                 <p>Защита диссертации на соискание ученой степени кандидата юридических наук по специальности "Уголовный процесс" под руководством доктора юридических наук, профессора Баранова Александра Михайловича</p>
               </div>
             </div>
-          </div></p>
+          </div>
           <p class="font_7" style="text-align: center;">&nbsp;</p>
           <p class="big-text" style="text-align: center;">Практика</p>
           <p class="font_7" style="text-align: center;">Следователь прокуратуры района</p>
