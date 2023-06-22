@@ -85,7 +85,7 @@ button:active {
 
 .mainer {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 100px;
   margin-left: 200px;
   margin-right: 200px;
@@ -104,11 +104,11 @@ button:active {
 .results {
   display: grid;
   justify-content: center;
-  grid-template-rows: 300px 600px;
+  grid-template-rows: 1fr 1fr;
 }
 
 .res1 {
-  display: grid; grid-template-rows: 300px 300px 300px; gap: 100px; align-items: top; justify-content: center;
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0px; align-items: top; justify-content: center;
 }
 
 form {
@@ -137,6 +137,20 @@ form:hover {
   height: 0px;
 }
 
+.cst1 {
+  display: flex;
+  flex-direction: raw;
+  justify-content: center;
+  transition: all 0.7s;
+}
+
+
+.cst2 {
+  justify-content: center;
+  display: flex;
+  flex-direction: raw;
+  transition: all 0.7s;
+}
 
 
 .cst1:hover {
@@ -151,10 +165,17 @@ form:hover {
 }
 
 
-
+.links-soc {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
 .adv-cont {
-  display: grid; grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px; gap: 40px; justify-content: center; align-items: center; margin-bottom: 10px;
+  display: grid; grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px; gap: 10px; justify-content: center; align-items: center; margin-bottom: 10px;
 }
 
 .soc-but:hover {
@@ -164,13 +185,4 @@ form:hover {
 
 .soc-but {
   transition: all 0.7s;
-}
-
-
-
-@media (max-height: 1300px){
-  .parallax {
-    height: 2000px;
-  }
-
 }
