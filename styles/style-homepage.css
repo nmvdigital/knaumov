@@ -147,6 +147,10 @@ form:hover {
   margin-top: 70px;
 }
 
+.mob-pic {
+  position: absolute;
+  opacity: 0;
+}
 
 .cst2 {
   justify-content: center;
@@ -199,4 +203,15 @@ form:hover {
   body {
     width: 782px;
   }
+
+  .mob-pic {
+    position: absolute;
+    opacity: 1;
+    top: 200px;
+    left: 50%;
+  }
+  .parallax {
+    opacity: 0;
+  }
+
 }
