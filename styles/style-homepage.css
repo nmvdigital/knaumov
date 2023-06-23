@@ -225,6 +225,7 @@ form:hover {
   .adv-cont {
     font-size: 14px ;
     gap: 100px;
+    grid-template-rows: 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px;
   }
   .draggin-adv {
     max-width: 600px;
