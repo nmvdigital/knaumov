@@ -79,6 +79,8 @@ span {
   flex: 1;
   background-color: rgba(255, 255, 255, 0);
   border: none;
+  font-size: 18px;
+  width: 150px;
 }
 
 .menubutton:hover {
@@ -103,6 +105,13 @@ span {
   }
   .header {
     width: 75%;
+
   }
-  
+  .menubutton {
+    font-size: 12px;
+  }
+  .menu {
+    gap: 100px;
+    margin-left: 150px;
+  }
 }
