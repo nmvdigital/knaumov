@@ -224,6 +224,7 @@ form:hover {
   }
   .adv-cont {
     font-size: 14px ;
+    gap: 100px;
   }
   .draggin-adv {
     max-width: 600px;
