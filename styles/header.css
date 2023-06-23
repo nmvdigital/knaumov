@@ -4,7 +4,6 @@ button {
   transition: background-color 0.5s;
 }
 
-
 button:hover {
   background-color: rgb(224, 224, 224);
   border: none;
@@ -93,4 +92,16 @@ span {
   background-color: #0d5ed762;
   border: none;
   transition: background-color 0.2s;
+}
+
+@media (max-width: 946px) {
+  .header text {
+    font-size: 10px;
+  }
+  .logo {
+    padding-left: 0px;
+  }
+  .header {
+    width: 75%;
+  }
 }

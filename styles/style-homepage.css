@@ -79,6 +79,7 @@ button:active {
 }
 
 .draggin-adv {
+  padding: 20px; text-align: center;  border: 0px; border-style: solid; border-color: rgba(0, 0, 0, 0.4); border-radius: 8px; box-shadow: 0px 24px 38px 3px rgba(0,0,0,0.14) , 0px 9px 46px 8px rgba(0,0,0,0.10) , 0px 11px 15px -7px rgba(0,0,0,0.2) ;
   transition: all 0.7s;
   width: 800px;
 }
@@ -142,6 +143,8 @@ form:hover {
   flex-direction: raw;
   justify-content: center;
   transition: all 0.7s;
+  gap: 10px;
+  margin-top: 70px;
 }
 
 
@@ -150,6 +153,7 @@ form:hover {
   display: flex;
   flex-direction: raw;
   transition: all 0.7s;
+  gap: 10px;
 }
 
 
@@ -185,4 +189,14 @@ form:hover {
 
 .soc-but {
   transition: all 0.7s;
+}
+
+@media  (max-width: 946px) {
+  .draggin {
+    right: 0px;
+    opacity: 0;
+  }
+  body {
+    width: 782px;
+  }
 }

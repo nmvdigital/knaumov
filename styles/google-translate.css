@@ -46,7 +46,7 @@ body {
 }
 
 
-@media (max-width: 720px){
+@media (max-width: 946px){
     .language {
         right: 0;
         flex-direction: row;
