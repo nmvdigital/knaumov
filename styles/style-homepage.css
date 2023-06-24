@@ -71,6 +71,7 @@ button:active {
 
 .draggin {
   transition: all 0.7s;
+  right: 500px;
 }
 
 .draggin-adv:hover {
@@ -235,4 +236,17 @@ form:hover {
   .draggin-adv {
     max-width: 600px;
   }
+}
+
+@media  (max-width: 1800px) {
+  .draggin {
+    right: 0px;
+  }
+
+}
+@media  (max-width: 1600px) {
+  .announcments p{
+
+  }
+
 }
