@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style-homepage.css">
     <link rel="stylesheet" href="styles/header.css">
@@ -21,14 +22,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="js/google-translate.js"></script>
     <title>Компетенции</title>
-
-
+    <meta name="description" content="Информация о предметах права, входящих в компетенции адвоката Кирилла Наумова">
+    <style>
+      .results {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 700px;
+        height: 600px;
+        overflow-y: scroll;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border: 0px; 
+        border-style: solid; 
+        border-color: rgba(0, 0, 0, 0.4); 
+        border-radius: 8px; 
+        box-shadow: 0px 24px 38px 3px rgba(0,0,0,0.14) , 0px 9px 46px 8px rgba(0,0,0,0.10) , 0px 11px 15px -7px rgba(0,0,0,0.2) ;
+        padding: 20px;
+      }
+      .res1 {
+        display: grid; grid-template-rows: 100px 100px 100px 100px 100px; gap: 50px; align-items: center; justify-content: center;
+      }
+      
+      .res2 {
+        display: grid; grid-template-rows: 100px 100px 100px 100px 100px; gap: 50px; align-items: center; justify-content: center;
+      }
+    </style>
 
   </head>
   <body style="margin: 0; opacity:0;transition:.5s;overflow-x: hidden;">
     <div class="header">
       <div style="background-color: rgba(255, 255, 255, 0); flex: 1;">
-        <img onclick="document.location='home-page.html'" class="logo" src="images\Naumov Perspecy — копия.png">
+        <img onclick="document.location='index.html'" class="logo" src="images\Naumov Perspecy — копия.png">
       </div>
       <div class="menu">
 
@@ -150,25 +174,27 @@
         </li>
         </ul>
     </div>
-    <div class="results">
-      <p style="font-size: 40px; text-align: center;"><span class="color_15">РЕЗУЛЬТАТЫ</span><br />защиты</p>
-      <div class="res1">
-        <div style="display: grid; grid-template-rows: 300px 200px; gap: 20px; font-size: 24px; justify-content: center;">
-          <p style="text-align: center;">Освобождение от субсидиарной ответственности двух участников общества с ограниченной ответственностью</p>
-          <button onclick="window.location.href='https://kad.arbitr.ru/Document/Pdf/cd8839f0-3a70-4afe-8469-9aa8602fa664/9139b4f0-36d4-4a6b-95c7-6b0fa94f7864/A40-214997-2018_20220817_Opredelenie.pdf?isAddStamp=True'" style="height: 50px;">Подробнее</button>
-        </div>
-        <div style="display: grid; grid-template-rows: 300px 200px; gap: 20px; font-size: 24px; justify-content: center;">
-          <p style="text-align: center;">Прекращение уголовного дела за отсутствием состава преступления</p>
-          <button onclick="window.location.href='docs/Постановление-о-прекращении-Жуков.pdf';" style="height: 50px;">Подробнее</button>
-        </div>
-        <div style="display: grid; grid-template-rows: 300px 200px; gap: 20px; font-size: 24px; justify-content: center;">
-          <p style="text-align: center;">Прекращение уголовного дела, минимизация уголовной репрессии</p>
-          <button onclick="window.location.href='docs/20230308093208627 (2).pdf'" style="height: 50px;">Подробнее</button>
+    <div style="display: flex; justify-content: center;">
+      <div class="results">
+        <div class="res1">
+          <p>Решение не вступило в законную силу.</p>
+          <p>Производство по делу об административном правонарушении прекращено.</p>
+          <p>Определение  Арбитражного  суда  города  Москвы в  части  привлечения к субсидиарной ответственности по 
+            обязательствам  общества  с  ограниченной  ответственностью  и  взыскания  с  нее  отменено.</p>
+          <p>Жалоба защитника удовлетворена, постановление отменено.</p>
+          <p>Уголовное преследование прекращено в связи с отсутствием в деянии состава преступления.</p>
         </div>
 
-
+        <div class="res2">
+          <button onclick="window.location.href='docs/1.pdf'" style="height: 50px;">Подробнее</button>
+          <button onclick="window.location.href='docs/2.pdf'" style="height: 50px;">Подробнее</button>
+          <button onclick="window.location.href='docs/A40-214997-2018_20220817_Opredelenie.pdf'" style="height: 50px;">Подробнее</button>
+          <button onclick="window.location.href='docs/63MS0035-01-2021-000001-21.pdf'" style="height: 50px;">Подробнее</button>
+          <button onclick="window.location.href='docs/Постановление-о-прекращении.pdf'" style="height: 50px;">Подробнее</button>
+         
+          
         </div>
-      </div>  
+      </div>
     </div>
     <footer>
       <div class="footer-line">
@@ -182,7 +208,7 @@
         <div class="downer-sector">      
           <p class="font_8"><span class="color_11">Россия. </span></p>
           <p class="font_8"><span class="color_11">г. Москва.</span></p>
-          <p class="font_8"><span class="color_11">Малый Полуярославский переулок, д. 3/5, стр.1&nbsp;</span></p>        
+          <p class="font_8"><span class="color_11">Малый Полуярославский переулок, д. 3/5, стр.1&nbsp;</span></p>
           <p>E-mail: naumov_advokat@gmail.com</p>
         </div>
       </div>
