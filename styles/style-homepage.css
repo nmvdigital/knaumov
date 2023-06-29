@@ -1,3 +1,29 @@
+::-webkit-scrollbar {
+  width: 15px;
+
+}
+
+::-webkit-scrollbar-track {
+  width: 15px;
+  background-color: rgb(207, 207, 207);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 15px;
+
+  background-color: #0D5DD7;
+  border: 3px solid rgb(207, 207, 207);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  width: 15px;
+  border: 3px solid rgb(207, 207, 207);
+  background-color: #1358be;
+  border-radius: 8px;
+}
+
+
 text {
   font-family: 'Rubik', sans-serif;
 }
@@ -103,15 +129,8 @@ button:active {
   justify-content: center;
 }
 
-.results {
-  display: grid;
-  justify-content: center;
-  grid-template-rows: 1fr 1fr;
-}
 
-.res1 {
-  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0px; align-items: top; justify-content: center;
-}
+
 
 form {
   align-items: center;
@@ -241,12 +260,6 @@ form:hover {
 @media  (max-width: 1800px) {
   .draggin {
     right: 0px;
-  }
-
-}
-@media  (max-width: 1600px) {
-  .announcments p{
-
   }
 
 }
