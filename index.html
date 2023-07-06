@@ -2,11 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles/style-homepage.css" media="">
-    <link rel="stylesheet" href="styles/timeline.css" media="">
-    <link rel="stylesheet" href="styles/header.css" media="">
-    <link rel="stylesheet" href="styles/footer.css" media="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Информация об образовании и многолетнем опыте работы адвоката Кирилла Наумова">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/timeline.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="images/Naumov Perspecy — копия.png" type="image/png">
@@ -14,133 +15,105 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/google-translate.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="js/google-translate.js"></script>
     <title>Главная - Об адвокате</title>
-    <meta name="description" content="Информация об образовании и многолетнем опыте работы адвоката Кирилла Наумова">
   </head>
-  <body style="margin: 0;opacity:0;transition:.5s; overflow-x: hidden;">
-    <div class="header">
-      <div style="background-color: rgba(255, 255, 255, 0); flex: 1;">
-        <img onclick="document.location='index.html'" class="logo" src="images\Naumov Perspecy — копия.png">
-      </div>
+  <body background="imgs/Back.png">
+    <!--Header-->
+    <header>
+      <img src="imgs/Naumov Perspecy — копия.png" alt="Логотип" style="width: 5%; padding: 1%; padding-left: 7%;">
       <div class="menu">
-
-        <button onclick="document.location='service.html'" class="menubutton" >Компетенции</button>
-        <button onclick="document.location='advantages.html'" class="menubutton">Преимущества</button>
-        <button onclick="document.location='cost.html'" class="menubutton" >Стоимость</button>
+        <a>Компетенции</a>
+        <a>Преимущества</a>
+        <a>Стоимость</a>
       </div>
-
-      <div class="language">
-        <img src="icons/ru.png" style="height: 20px;" alt="ru" data-google-lang="ru" class="language__img">
-        <img src="icons/us.png" style="height: 20px;" alt="en" data-google-lang="en" class="language__img">
-        <img src="icons/il.png" style="height: 20px;" alt="he" data-google-lang="iw" class="language__img">
-      </div>
-
-    </div> 
-
-      <div class="parallax"> 
-
-        <div class="draggin" style="position: absolute; top: 500px; width: 600px; border-radius: 40px; text-align: center;"><p style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;font-weight: bold; font-size: 60px; color: rgb(255, 255, 255);">Кирилл Наумов</p></div>
-        <div class="draggin" style="position: absolute; top: 650px; width: 400px; border-radius: 40px; text-align: center;"><p style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;font-size: 40px; color: rgb(255, 255, 255);">Ваша <span>проблема.</span></p></div>
-        <div class="draggin" style="position: absolute; top: 750px; width: 400px; border-radius: 40px; text-align: center;"><p style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;font-size: 40px; color: rgb(255, 255, 255);">Моя <span>работа.</span></p></div>
-      </div>
-
-    <img class="mob-pic" src="images/Mobile-PIC.png">
-    <p class="mob-txt" style="top: 300px;">Кирилл Наумов. Ваша <span>проблема.</span> Моя <span>работа.</span></p>
-      <div class="mobile-me">
-        <p>Кирилл Наумов</p>
-        <p>Ваша <span>проблема.</span></p>
-        <p>Моя <span>работа.</span></p>
-      </div>
-      <div class="announcments">
-        
-        <p class="animate__animated animate__fadeIn" style="text-align: center; padding-top: 40px; padding-bottom: 40px; font-size: 30px;">20 лет опыта работы в сфере уголовного судопроизводства, защиты и представительства по уголовным делам</p>
-      
-      </div>  
-      <div class="second-slide" style="position: relative; margin-bottom: 100px;">
-        <!--<div class="draggin" style="position: absolute; left: 20px; top: 250px;"><img style="opacity: 0.8;" src="images\image_processing20200511-1138-jcu8lv.png"></div>-->
-        <div class="about">
-
-          <p class="big-text" style="text-align: center; font-size: 40px;">Образование</p>
-          <div class="timeline">
-
-            <div class="container left">
-              <div class="content">
-                <h2>2003</h2>
-                <p>Следственный факультет Омской академии МВД России </p>
-              </div>
-            </div>
-            <div class="container right">
-              <div class="content">
-                <h2>2011 г., 2014 г.</h2>
-                <p>Академия Генеральной прокуратуры Российской Федерации</p>
-              </div>
-            </div>
-            <div class="container left">
-              <div class="content">
-                <h2>2017-2022 г.</h2>
-                <p>Аспирантура Сибирского юридического университета</p>
-              </div>
-            </div>
-            <div class="container right">
-              <div class="content">
-                <h2>2021 г.</h2>
-                <p>МГУ им. М.В. Ломоносова повышение квалификации по дисциплине "Спортивное право и спортивный арбитраж"</p>
-              </div>
-            </div>
-            <div class="container left">
-              <div class="content">
-                <h2>2021 г.</h2>
-                <p>Защита диссертации на соискание ученой степени кандидата юридических наук по специальности "Уголовный процесс" под руководством доктора юридических наук, профессора Баранова Александра Михайловича</p>
-              </div>
+    </header>
+    <!--Bio-->
+    <div class="bio">
+      <img class="biopic" src="imgs/Photo.png" alt="Naumov">
+      <div style="display: grid; grid-template-rows: 1fr 1fr; gap: 30%;">
+        <div style="border: 0px solid white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 8px; padding: 10px; background-color: white; width: 90%; text-align: center;"><h1>Наумов Кирилл Александрович</h1></div>
+        <div style="border: 0px solid white; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 8px; padding: 10px; background-color: white; width: 90%; text-align: center;"><p>Ваша проблема. Моя работа</p></div>
+      </div>   
+    </div>
+    <!--Education-->
+    <div style="background-color: rgb(0, 0, 0); text-align: center; color: rgb(255, 255, 255);"><h2>Образование</h2></div>
+    <div class="edu">
+      <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <h3>2003</h3>
+              <p>Следственный факультет Омской академии МВД России </p>
             </div>
           </div>
-          <p class="font_7" style="text-align: center;">&nbsp;</p>
-          <p class="big-text" style="text-align: center;">Практика</p>
-          <p class="font_7" style="text-align: center;">Следователь прокуратуры района</p>
-          <p class="font_7" style="text-align: center;">Следователь отдела по расследованию особо важных дел</p>
-          <p class="font_7" style="text-align: center;">Прокурор управления по надзору за следствием, дознанием и оперативно-розыскной деятельностью&nbsp;</p>
-          <p class="font_7" style="text-align: center;">Старший помощник прокурора субъекта&nbsp;</p>
-          <p class="font_7" style="text-align: center;">Начальником управления прокуратуры субъекта.</p>
-          <p class="font_7" style="text-align: center;">Вышел в отставку на пенсию по выслуге лет с должности старшего прокурора Главного управления по надзору за расследованием особо важных дел Генеральной прокуратуры Российской Федерации</p>
-          <p class="font_7" style="text-align: center;">В Генеральной прокуратуре осуществлял надзор за расследованием уголовных дел центральным аппаратом Следственного комитета и Следственным департаментом МВД Российской Федерации</p>
-          <p class="font_7" style="text-align: center;">В настоящее время - адвокат</p>
-          <p class="font_7" style="text-align: center;">&nbsp;</p>
-          <p class="big-text" style="text-align: center;">Научная деятельность</p>
-          <p class="font_7" style="text-align: center;">Исследование проблем уголовного судопроизводства с 2006 года</p>
-          <p class="font_7" style="text-align: center;">Автор 13 научных статей в ведущих научных изданиях Российской Федерации.</p>
-          <p class="font_7" style="text-align: center;">Соавтор монографии "Сущность и построение досудебного производства в уголовном процессе России" (издательство "Юрлитинформ")</p>
-          <p class="font_7" style="text-align: center;">Участник международных и всероссийских научно-практических конференций.</p>
-          <p class="font_7" style="text-align: center;">В 2021 году под руководством доктора юридических наук, профессора Баранова Александра Михайловича защитил диссертацию на соискание ученой степени кандидата юридических наук по специальности "Уголовный процесс".</p>
-
-        </div>
-
+          <div class="container right">
+            <div class="content">
+              <h3>2011 г., 2014 г.</h3>
+              <p>Академия Генеральной прокуратуры Российской Федерации</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h3>2017-2022 г.</h3>
+              <p>Аспирантура Сибирского юридического университета</p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h3>2021 г.</h3>
+              <p>МГУ им. М.В. Ломоносова повышение квалификации по дисциплине "Спортивное право и спортивный арбитраж"</p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h3>2021 г.</h3>
+              <p>Защита диссертации на соискание ученой степени кандидата юридических наук по специальности "Уголовный процесс" под руководством доктора юридических наук, профессора Баранова Александра Михайловича</p>
+            </div>
+          </div>
+          </div>
+    </div>
+    <!--Exp-->
+    <div class="exp">
+      <div style="background-color: rgb(0, 0, 0); text-align: center; color: rgb(255, 255, 255);"><h2>Практика</h2></div>
+      <div style="background-color: white; padding: 10px; text-align: center;">
+        <p>Следователь прокуратуры района.</p>
+        <p>Следователь отдела по расследованию особо важных дел.</p>
+        <p>Прокурор управления по надзору за следствием, дознанием и оперативно-розыскной деятельностью.</p>
+        <p>Старший помощник прокурора субъекта.</p>
+        <p>Начальником управления прокуратуры субъекта.</p>
+        <p>Вышел в отставку на пенсию по выслуге лет с должности старшего прокурора Главного управления по надзору за расследованием особо важных дел Генеральной прокуратуры Российской Федерации.</p>
+        <p>В Генеральной прокуратуре осуществлял надзор за расследованием уголовных дел центральным аппаратом Следственного комитета и Следственным департаментом МВД Российской Федерации.</p>
+        <p>В настоящее время - адвокат</p>
       </div>
+      <div style="background-color: rgb(0, 0, 0); text-align: center; color: rgb(255, 255, 255);"><h2>Научная деятельность</h2></div>
+      <div style="background-color: white; padding: 10px; text-align: center;">
+        <p>Исследование проблем уголовного судопроизводства с 2006 года</p>
+        <p>Автор 13 научных статей в ведущих научных изданиях Российской Федерации.</p>
+        <p>Соавтор монографии "Сущность и построение досудебного производства в уголовном процессе России" (издательство "Юрлитинформ")</p>
+        <p>Участник международных и всероссийских научно-практических конференций.</p>
+        <p>В 2021 году под руководством доктора юридических наук, профессора Баранова Александра Михайловича защитил диссертацию на соискание ученой степени кандидата юридических наук по специальности "Уголовный процесс".</p>
+      </div>
+    </div>
+    <!--Footer-->
     <footer>
-      <div class="footer-line">
-        <div class="upper-sector">
-          <p style="display: inline-block; font-weight: bolf; font-size: 24px;">Связаться со мной</p>
-          <form action="https://wa.me/79136518560" target="_blank"><button style="background-color: rgba(0, 0, 0, 0);"><img src="icons/iconmonstr-whatsapp-1-240.png" style="height: 40px;"></button></form>
-          <form action="https://www.linkedin.com/in/kirill-naumov-6382bb1a8/" target="_blank"><button style="background-color: rgba(0, 0, 0, 0);"><img src="icons/iconmonstr-linkedin-1-240.png" style="height: 40px;"></button></form>
-
-        </div>
-
-        <div class="downer-sector">      
-          <p class="font_8"><span class="color_11">Россия. </span></p>
-          <p class="font_8"><span class="color_11">г. Москва.</span></p>
-          <p class="font_8"><span class="color_11">Малый Полуярославский переулок, д. 3/5, стр.1&nbsp;</span></p>        
-          <p>E-mail: naumov_advokat@gmail.com</p>
-        </div>
+      <div class="foot1">
+        <h2 style="color: white;">Связаться со мной</h2>
+        <button onclick="window.location.href='https://wa.me/79136518560';" style="background-color: #25D366;"><img src="imgs/whatsapp-logo.png"></button>
+        <button onclick="window.location.href='https://www.linkedin.com/in/kirill-naumov-6382bb1a8/';" style="background-color: #0e76a8;"><img src="imgs/Linkedin-logo.png"></button>
       </div>
-      <p style="z-index: 5; color: grey; text-align: center;">© 2020 Кирилл Наумов. Номер в реестре адвокатов г. Москвы 77/15352.</p>
+      <div class="foot2"> 
+        <p class="font_8"><span class="color_11">Россия. </span></p>
+        <p class="font_8"><span class="color_11">г. Москва.</span></p>
+        <p class="font_8"><span class="color_11">Малый Полуярославский переулок, д. 3/5, стр.1&nbsp;</span></p>        
+        <p>E-mail: naumov_advokat@gmail.com</p>
+      </div>
+      <p style="z-index: 5;background-color: black; color: rgb(255, 255, 255); text-align: center;">© 2020 Кирилл Наумов. Номер в реестре адвокатов г. Москвы 77/15352.</p>
     </footer>
-    <script>
-      $(document).ready(function() {    
-        $("body").css("opacity", "1");
-      });
-    </script>
   </body>
 </html>
