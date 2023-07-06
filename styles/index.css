@@ -1,0 +1,25 @@
+.biopic {
+  margin-left: 25%;
+  width: 60%;
+  border: 0px solid white;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h2 {
+  padding: 30px;
+}
+
+.bio {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8.7%;
+}
+
+
+.edu {
+  background-color: white;
+}
+
