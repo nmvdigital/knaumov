@@ -2,217 +2,74 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style-homepage.css">
+    <meta name="description" content="Информация об образовании и многолетнем опыте работы адвоката Кирилла Наумова">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="styles/service.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
-    <link rel="shortcut icon" href="images/Naumov Perspecy — копия.png" type="image/png">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="shortcut icon" href="imgs/Naumov Perspecy — копия.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/google-translate.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="js/google-translate.js"></script>
     <title>Компетенции</title>
-    <meta name="description" content="Информация о предметах права, входящих в компетенции адвоката Кирилла Наумова">
-    <style>
-      .results {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        width: 700px;
-        height: 600px;
-        overflow-y: scroll;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        border: 0px; 
-        border-style: solid; 
-        border-color: rgba(0, 0, 0, 0.4); 
-        border-radius: 8px; 
-        box-shadow: 0px 24px 38px 3px rgba(0,0,0,0.14) , 0px 9px 46px 8px rgba(0,0,0,0.10) , 0px 11px 15px -7px rgba(0,0,0,0.2) ;
-        padding: 20px;
-      }
-      .res1 {
-        display: grid; grid-template-rows: 100px 100px 100px 100px 100px; gap: 50px; align-items: center; justify-content: center;
-      }
-      
-      .res2 {
-        display: grid; grid-template-rows: 100px 100px 100px 100px 100px; gap: 50px; align-items: center; justify-content: center;
-      }
-    </style>
-
   </head>
-  <body style="margin: 0; opacity:0;transition:.5s;overflow-x: hidden;">
-    <div class="header">
-      <div style="background-color: rgba(255, 255, 255, 0); flex: 1;">
-        <img onclick="document.location='index.html'" class="logo" src="images\Naumov Perspecy — копия.png">
-      </div>
+  <body background="imgs/Back.png">
+    <!--Header-->
+    <header>
+      <img onclick="document.location='index.html'" src="imgs/Naumov Perspecy — копия1.png" alt="Логотип" style="width: 5%; padding: 1%; padding-left: 7%;">
       <div class="menu">
-
-        <button onclick="document.location='service.html'" class="menubutton" >Компетенции</button>
-        <button onclick="document.location='advantages.html'" class="menubutton">Преимущества</button>
-        <button onclick="document.location='cost.html'" class="menubutton">Стоимость</button>
+        <a href="service.html">Услуги</a>
+        <a href="advantages.html">Преимущества</a>
+        <a href="cost.html">Контакты и стоимость</a>
       </div>
       <div class="language">
         <img src="icons/ru.png" style="height: 20px;" alt="ru" data-google-lang="ru" class="language__img">
         <img src="icons/us.png" style="height: 20px;" alt="en" data-google-lang="en" class="language__img">
         <img src="icons/il.png" style="height: 20px;" alt="he" data-google-lang="iw" class="language__img">
       </div>
-    </div> 
-      
-      
-
+    </header>
+    <!--Service-->
+    <div style="background-color: rgb(0, 0, 0); text-align: center; color: rgb(255, 255, 255); margin-top: 9.3%;"><h1>Компетенции адвоката</h1></div>
     <div class="mainer"> 
-      <div>
-        <p style="text-align: center; font-size: 40px; margin-bottom: 200px;"><span>Защита в уголовном судопроизводстве&nbsp;</span></p>
-        <ul class="font_8" style="font-size: 18px;">
-          <li>
-          <blockquote class="font_8">
-          <p class="font_8">защита и представительство на стадии проверки сообщений о преступлениях в порядке ст. 144 УПК РФ</p>
-          <p class="font_8"><span></span></p>
-          </blockquote>
-          </li>
-          <li>
-          <blockquote class="font_8">
-          <p class="font_8">защита и представительство лиц, в отношении которых проводятся</p>
-          <p class="font_8">административное расследование или оперативно-розыскные мероприятия</p>
-          <p class="font_8"><span></span></p>
-          </blockquote>
-          </li>
-          <li>
-          <blockquote class="font_8">
-          <p class="font_8">защита по сложным уголовным делам в сфере экономики</p>
-          <p class="font_8"><span></span></p>
-          </blockquote>
-          </li>
-          <li>
-          <blockquote class="font_8">
-          <p class="font_8">защита по сложным уголовным делам о должностных и коррупционных преступлениях</p>
-          </blockquote>
-          </li>
-          </ul>
-      </div>
-      <div>
-        <p style="text-align: center; font-size: 40px; margin-bottom: 100px;"><span>Корпоративные конфликты и банкротство юридических лиц</span></p>
-        <ul class="font_8" style="font-size: 18px;">
-          <li>
-          <blockquote class="font_8">
-          <p class="font_8">организация и проведение внутренних расследований в компаниях для выявления и фиксации неправомерных действий контролирующих лиц, руководителей, сотрудников и третьих лиц, наносящих вред компании</p>
-          <p class="font_8"><span></span></p>
-          </blockquote>
-          </li>
-          <li>
-          <blockquote class="font_8">
-          <p class="font_8">организация и проведение внутренних расследований в компаниях для выявления уголовно-правовых рисков для контролирующих лиц, руководителей, сотрудников и третьих лиц</p>
-          <p class="font_8"><span></span></p>
-          </blockquote>
-          </li>
-          <li>
-          <blockquote class="font_8">
-          <p class="font_8">правовой аудит компаний</p>
-          <p class="font_8"><span></span></p>
-          </blockquote>
-          </li>
-          <li>
-          <blockquote class="font_8">
-          <p class="font_8">проверка контрагентов</p>
-          <p class="font_8"><span></span></p>
-          </blockquote>
-          </li>
-          <li>
-          <blockquote class="font_8">
-          <p class="font_8">защита и представительство в спорах между участниками (учредителями), руководителями юридических лиц</p>
-          <p class="font_8"><span></span></p>
-          </blockquote>
-          </li>
-          <li>
-          <blockquote class="font_8">
-          <p class="font_8">защита от субсидиарной ответственности контролирующих лиц&nbsp; в делах о банкротстве</p>
-          </blockquote>
-          </li>
-          </ul>
-      </div>
+      <h2>Защита и представительство в уголовном судопроизводстве.</h2>
+      <p>На стадии проверки сообщений о преступлении в порядке ст. 144 УПК РФ.</p>
+      <p>При производстве оперативно-розыскных мероприятий и мероприятий налогового контроля.</p>
+      <p>При расследовании уголовных дел об экономических, должностных, коррупционных преступлениях.</p>
+      <h2>Корпоративные конфликты и банкротство юридических лиц.</h2>
+      <p>Защита и представительство в спорах между участниками (учредителями), руководителями юридических лиц.</p>
+      <p>Защита и представительство контролирующих должника лиц при привлечении к субсидиарной ответственности по обязательствам должника в делах о банкротстве.</p>
+      <a href="cases.html" style="text-decoration: underline;">Подробнее о практике</a>
     </div>
+    <!--Expertise-->
+    <div style="background-color: rgb(0, 0, 0); text-align: center; color: rgb(255, 255, 255);"><h2>Экспертиза уголовных дел и материалов проверок сообщений о преступлениях</h2></div>
     <div class="expertise">
-      <p style="text-align: center; font-size: 40px;"><span>Экспертиза уголовных дел и материалов проверок сообщений о преступлениях</span></p>
-      <ul class="font_8" style="font-size: 24px;">
-        <li>
-        <blockquote class="font_8">
-        <p class="font_8">изучение уголовных дел и материалов проверок</p>
-        <p class="font_8"><span class="wixGuard"></span></p>
-        </blockquote>
-        </li>
-        <li>
-        <blockquote class="font_8">
-        <p class="font_8">подготовка заключения на предмет нарушений уголовно-процессуального закона и норм уголовного права</p>
-        <p class="font_8"><span class="wixGuard"></span></p>
-        </blockquote>
-        </li>
-        <li>
-        <blockquote class="font_8">
-        <p class="font_8">разработка вариантов защиты</p>
-        <p class="font_8"><span class="wixGuard"></span></p>
-        </blockquote>
-        </li>
-        <li>
-        <blockquote class="font_8">
-        <p class="font_8">разработка проекта стратегии защиты</p>
-        <p class="font_8"><span class="wixGuard"></span></p>
-        </blockquote>
-        </li>
-        <li>
-        <blockquote class="font_8">
-        <p class="font_8">подготовка правовых документов для реализации стратегии защиты</p>
-        </blockquote>
-        </li>
-        </ul>
+      <p>Изучение уголовных дел и материалов проверок.</p>
+      <p>Подготовка заключения на предмет нарушений уголовно-процессуального закона и норм уголовного права.</p>
+      <p>Разработка вариантов защиты.</p>
+      <p>Разработка проекта стратегии защиты.</p>
+      <p>Подготовка правовых документов для реализации стратегии защиты.</p>
     </div>
-    <div style="display: flex; justify-content: center;">
-      <div class="results">
-        <div class="res1">
-          <p>Решение не вступило в законную силу.</p>
-          <p>Производство по делу об административном правонарушении прекращено.</p>
-          <p>Определение  Арбитражного  суда  города  Москвы в  части  привлечения к субсидиарной ответственности по 
-            обязательствам  общества  с  ограниченной  ответственностью  и  взыскания  с  нее  отменено.</p>
-          <p>Жалоба защитника удовлетворена, постановление отменено.</p>
-          <p>Уголовное преследование прекращено в связи с отсутствием в деянии состава преступления.</p>
-        </div>
-
-        <div class="res2">
-          <button onclick="window.location.href='docs/1.pdf'" style="height: 50px;">Подробнее</button>
-          <button onclick="window.location.href='docs/2.pdf'" style="height: 50px;">Подробнее</button>
-          <button onclick="window.location.href='docs/A40-214997-2018_20220817_Opredelenie.pdf'" style="height: 50px;">Подробнее</button>
-          <button onclick="window.location.href='docs/63MS0035-01-2021-000001-21.pdf'" style="height: 50px;">Подробнее</button>
-          <button onclick="window.location.href='docs/Постановление-о-прекращении.pdf'" style="height: 50px;">Подробнее</button>
-         
-          
-        </div>
-      </div>
-    </div>
+    <!--Footer-->
     <footer>
-      <div class="footer-line">
-        <div class="upper-sector">
-          <p style="display: inline-block; font-weight: bolf; font-size: 24px;">Связаться со мной</p>
-          <form action="https://wa.me/79136518560" target="_blank"><button style="background-color: rgba(0, 0, 0, 0);"><img src="icons/iconmonstr-whatsapp-1-240.png" style="height: 40px;"></button></form>
-          <form action="https://www.linkedin.com/in/kirill-naumov-6382bb1a8/" target="_blank"><button style="background-color: rgba(0, 0, 0, 0);"><img src="icons/iconmonstr-linkedin-1-240.png" style="height: 40px;"></button></form>
-
-        </div>
-
-        <div class="downer-sector">      
-          <p class="font_8"><span class="color_11">Россия. </span></p>
-          <p class="font_8"><span class="color_11">г. Москва.</span></p>
-          <p class="font_8"><span class="color_11">Малый Полуярославский переулок, д. 3/5, стр.1&nbsp;</span></p>
-          <p>E-mail: naumov_advokat@gmail.com</p>
-        </div>
+      <div class="foot1">
+        <h2 style="color: white;">Связаться со мной</h2>
+        <button onclick="window.location.href='https://wa.me/79136518560';" class="button1"><img src="imgs/whatsapp-logo.png"></button>
+        <button onclick="window.location.href='https://www.linkedin.com/in/kirill-naumov-6382bb1a8/';" class="button2"><img src="imgs/Linkedin-logo.png"></button>
       </div>
-      <p style="z-index: 5; color: grey; text-align: center;">© 2020 Кирилл Наумов. Номер в реестре адвокатов г. Москвы 77/15352.</p>
+      <div class="foot2"> 
+        <p class="font_8"><span class="color_11">Россия. </span></p>
+        <p class="font_8"><span class="color_11">г. Москва.</span></p>
+        <p class="font_8"><span class="color_11">Малый Полуярославский переулок, д. 3/5, стр.1</span></p>        
+        <p>E-mail: naumov_advokat@gmail.com</p>
+      </div>
+      <p style="z-index: 5;background-color: black; color: rgb(255, 255, 255); text-align: center;">© 2020 Кирилл Наумов. Номер в реестре адвокатов г. Москвы 77/15352.</p>
     </footer>
     <script>
       $(document).ready(function() {    

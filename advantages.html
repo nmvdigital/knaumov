@@ -1,93 +1,76 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="styles/style-homepage.css">
+    <meta charset="utf-8">
+    <meta name="description" content="Информация об образовании и многолетнем опыте работы адвоката Кирилла Наумова">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
-    <link rel="shortcut icon" href="images/Naumov Perspecy — копия.png" type="image/png">
+    <link rel="stylesheet" href="styles/all.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="styles/advantages.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="shortcut icon" href="imgs/Naumov Perspecy — копия.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/google-translate.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    <script src="js/google-translate.js"></script>
+    <script src="scripts/google-translate.js"></script>
     <title>Преимущества</title>
-    
-    <style>
-      .create-line {
-        width: 100%;
-        border: 3px solid #000000;
-      }
-    </style>
   </head>
-  <body style="margin: 0px;opacity:0;transition:.5s;overflow-x: hidden;">
-    <div class="header">
-      <div style="background-color: rgba(255, 255, 255, 0); flex: 1;">
-        <img onclick="document.location='index.html'" class="logo" src="images\Naumov Perspecy — копия.png">
-      </div>
+  <body background="imgs/Back.png">
+    <!--Header-->
+    <header>
+      <img onclick="document.location='index.html'" src="imgs/Naumov Perspecy — копия1.png" alt="Логотип" style="width: 5%; padding: 1%; padding-left: 7%;">
       <div class="menu">
-        <button onclick="document.location='service.html'" class="menubutton">Компетенции</button>
-        <button onclick="document.location='advantages.html'" class="menubutton">Преимущества</button>
-        <button onclick="document.location='cost.html'" class="menubutton">Стоимость</button>
+        <a href="service.html">Услуги</a>
+        <a href="advantages.html">Преимущества</a>
+        <a href="cost.html">Контакты и стоимость</a>
       </div>
       <div class="language">
         <img src="icons/ru.png" style="height: 20px;" alt="ru" data-google-lang="ru" class="language__img">
         <img src="icons/us.png" style="height: 20px;" alt="en" data-google-lang="en" class="language__img">
         <img src="icons/il.png" style="height: 20px;" alt="he" data-google-lang="iw" class="language__img">
       </div>
-
+    </header>
+    <!--Advs-->
+    <div style="background-color: rgb(0, 0, 0); text-align: center; color: rgb(255, 255, 255); margin-top: 8.7%;"><h1>Преимущества выбора адвоката</h1></div>
+    <div class="advantages-content">
+      <p class="advantages-text">Знания получены при обучении на следственном факультете ведущего учебного заведения России и закреплены систематическим повышением профессиональной квалификации</p>
+      <p class="advantages-text">Владение теорией и практикой уголовного права, уголовного процесса, криминалистики, оперативно-розыскной деятельности, экспертной деятельности</p>
+      <p class="advantages-text">Многолетний опыт работы следователем, прокурором, адвокатом</p>
+      <p class="advantages-text">Знание тактики и методики расследования, порядка производства любого следственного и иного процессуального действия, вероятности исхода уголовного дела, оценки доказательств, правильного момента составления ходатайств по уголовному делу и жалоб прокурору или в суд</p>
+      <p class="advantages-text">Опыт взаимодействия со следователями (дознавателями), руководителями следственных органов и органов дознания, прокурорами и судом</p>
+      <p class="advantages-text">Применение адвокатского расследования с полноценным собиранием фактических данных, которые могут стать доказательствами в уголовном процессе</p>
+      <p class="advantages-text">Личное участие в качестве следователя, прокурора в производстве доследственных проверок, расследовании уголовных дел о тяжких и особо тяжких преступлениях, групповых, многоэпизодных, экономических, должностных, коррупционных, налоговых, банковских преступлениях и поддержании обвинения по ним в суде</p>
+      <p class="advantages-text">Личное участие в качестве защитника и представителя на стадиях досудебного производства и судебного разбиательства по уголовным делам о тяжких и особо тяжких преступлениях, групповых, многоэпизодных, экономических, должностных, коррупционных, налоговых преступлениях, преступлениях в сфере оборота наркотических средств и психотропных веществ, хищениях денежных средств из банков</p>
+      <p class="advantages-text">Сотрудничество с признанными экспертами в области уголовного судопроизводства докторами юридических наук, с судебными экспертами докторами экономических наук, докторами медицинских наук</p>
     </div>
-    <div style="margin-top: 200px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; align-items: center; justify-content: center;">
-      <div class="create-line"></div>
-      <p style="font-size: 40px; text-align: center;">Преимущества сотрудничества со мной</p>
-      <div class="create-line"></div>
-    </div>
-    <div class="adv-cont">
-      <p class="draggin-adv">Знания получены при обучении на следственном факультете ведущего учебного заведения России и закреплены систематическим повышением профессиональной квалификации</p>
-      <p class="draggin-adv">Владение теорией и практикой уголовного права, уголовного процесса, криминалистики, оперативно-розыскной деятельности, экспертной деятельности</p>
-      <p class="draggin-adv">Многолетний опыт работы следователем, прокурором, адвокатом</p>
-      <p class="draggin-adv">Знание тактики и методики расследования, порядка производства любого следственного и иного процессуального действия, вероятности исхода уголовного дела, оценки доказательств, правильного момента составления ходатайств по уголовному делу и жалоб прокурору или в суд</p>
-      <p class="draggin-adv">Опыт взаимодействия со следователями (дознавателями), руководителями следственных органов и органов дознания, прокурорами и судом</p>
-      <p class="draggin-adv">Применение адвокатского расследования с полноценным собиранием фактических данных, которые могут стать доказательствами в уголовном процессе</p>
-      <p class="draggin-adv">Личное участие в качестве следователя, прокурора в производстве доследственных проверок, расследовании уголовных дел о тяжких и особо тяжких преступлениях, групповых, многоэпизодных, экономических, должностных, коррупционных, налоговых, банковских преступлениях и поддержании обвинения по ним в суде</p>
-      <p class="draggin-adv">Личное участие в качестве защитника и представителя на стадиях досудебного производства и судебного разбиательства по уголовным делам о тяжких и особо тяжких преступлениях, групповых, многоэпизодных, экономических, должностных, коррупционных, налоговых преступлениях, преступлениях в сфере оборота наркотических средств и психотропных веществ, хищениях денежных средств из банков</p>
-      <p class="draggin-adv">Формирование стратегии защиты и представительства на основании знаний, опыта, современной судебной и правоприменительной практики с учетом действующего закона</p>
-      <p class="draggin-adv">Сотрудничество с признанными экспертами в области уголовного судопроизводства &ndash; докторами юридических наук, с судебными экспертами &ndash; докторами экономических наук, докторами медицинских наук</p>
-    </div>
-    <div>
-      <div class="create-line"></div>
-    </div>
-    <div style="display: grid; grid-template-rows: 500px 50px; justify-content: center; align-items: center; margin-top: 100px;">
+    <!--Slider-->
+    <div style="background-color: rgb(0, 0, 0); text-align: center; color: rgb(255, 255, 255);"><h2>Достижения</h2></div>
+    <div style="display: grid; grid-template-rows: 650px 50px; justify-content: center; align-items: center; background-color: white;">
       <div id="slider">
         <div class="slider-container">
-          <img src="images/ВерностьЗакону.jpg"class="active">
-          <img src="images/СертификатВебинар072021_1.jpg">
-          <img src="images/СпортивнаяБлагодарность.jpg">
-          <img src="images/БлагодарностьСпиридонова.jpg">
-          <img src="images/Сертификат просмотра трансляции (2).jpg">
-          <img src="images/WhatsApp Image 2021-07-29 at 17.42_edited.jpg">
-          <img src="images/ГрамотаГубернатора.jpg">
-          <img src="images/ДипломКандидатаЮридическихНаук_Страница_2_Изображение_0001.jpg">
-          <img src="images/Консультирование_по_вопросам_создания_коммерческих_организаций-Отчет_о_прохождении_курса_1217.jpg">
-          <img src="images/ЛучшийСледователь.jpg">
-          <img src="images/Наумов Кирилл Александрович Сертификат Rule of Corona.jpg">
-          <img src="images/Переговоры._Дистанционный_курс_для_адвокатов-Отчет_о_прохождение_курса_2585.jpg">
-          <img src="images/ПовышениеКвалификации.jpg">
-          <img src="images/ПовышениеКвалификации2.jpg">
-          <img src="images/ПовышениеКвалификации3.jpg">
-          <img src="images/ПочетнаяГрамотаГенпрокурора.jpg">
-          <img src="images/Профессиональная_деятельность_адвоката_в_уголовном_процессе-Отчет_о_прохождении_курса_776.jpg">
+          <img src="imgs/ВерностьЗакону.jpg"class="active" alt="Diplome">
+          <img src="imgs/СертификатВебинар072021_1.jpg" alt="Sertificate">
+          <img src="imgs/СпортивнаяБлагодарность.jpg" alt="SportDiplome">
+          <img src="imgs/БлагодарностьСпиридонова.jpg" alt="Gratitude">
+          <img src="imgs/Сертификат просмотра трансляции (2).jpg" alt="Sertificate">
+          <img src="imgs/WhatsApp Image 2021-07-29 at 17.42_edited.jpg" alt="autoreferate">
+          <img src="imgs/ГрамотаГубернатора.jpg">
+          <img src="imgs/ДипломКандидатаЮридическихНаук_Страница_2_Изображение_0001.jpg">
+          <img src="imgs/Консультирование_по_вопросам_создания_коммерческих_организаций-Отчет_о_прохождении_курса_1217.jpg">
+          <img src="imgs/ЛучшийСледователь.jpg">
+          <img src="imgs/Наумов Кирилл Александрович Сертификат Rule of Corona.jpg">
+          <img src="imgs/Переговоры._Дистанционный_курс_для_адвокатов-Отчет_о_прохождение_курса_2585.jpg">
+          <img src="imgs/ПовышениеКвалификации.jpg">
+          <img src="imgs/ПовышениеКвалификации2.jpg">
+          <img src="imgs/ПовышениеКвалификации3.jpg">
+          <img src="imgs/ПочетнаяГрамотаГенпрокурора.jpg">
+          <img src="imgs/Профессиональная_деятельность_адвоката_в_уголовном_процессе-Отчет_о_прохождении_курса_776.jpg">
         </div>
       </div>
       <div class="buttons" style="display: grid; grid-template-columns: 100px 100px; gap: 100px; align-items: center; justify-content: center;">
@@ -95,26 +78,22 @@
         <button class="next">&rarr;</button>
       </div>
     </div>
-  
+    <!--Footer-->
     <footer>
-      <div class="footer-line">
-        <div class="upper-sector">
-          <p style="display: inline-block; font-weight: bolf; font-size: 24px;">Связаться со мной</p>
-          <form action="https://wa.me/79136518560" target="_blank"><button style="background-color: rgba(0, 0, 0, 0);"><img src="icons/iconmonstr-whatsapp-1-240.png" style="height: 40px;"></button></form>
-          <form action="https://www.linkedin.com/in/kirill-naumov-6382bb1a8/" target="_blank"><button style="background-color: rgba(0, 0, 0, 0);"><img src="icons/iconmonstr-linkedin-1-240.png" style="height: 40px;"></button></form>
-
-        </div>
-
-        <div class="downer-sector">      
-          <p class="font_8"><span class="color_11">Россия. </span></p>
-          <p class="font_8"><span class="color_11">г. Москва.</span></p>
-          <p class="font_8"><span class="color_11">Малый Полуярославский переулок, д. 3/5, стр.1&nbsp;</span></p>        
-          <p>E-mail: naumov_advokat@gmail.com</p>
-        </div>
+      <div class="foot1">
+        <h2 style="color: white;">Связаться со мной</h2>
+        <button onclick="window.location.href='https://wa.me/79136518560';" class="button1"><img src="imgs/whatsapp-logo.png"></button>
+        <button onclick="window.location.href='https://www.linkedin.com/in/kirill-naumov-6382bb1a8/';" class="button2"><img src="imgs/Linkedin-logo.png"></button>
       </div>
-      <p style="z-index: 5; color: grey; text-align: center;">© 2020 Кирилл Наумов. Номер в реестре адвокатов г. Москвы 77/15352.</p>
+      <div class="foot2"> 
+        <p class="font_8"><span class="color_11">Россия. </span></p>
+        <p class="font_8"><span class="color_11">г. Москва.</span></p>
+        <p class="font_8"><span class="color_11">Малый Полуярославский переулок, д. 3/5, стр.1&nbsp;</span></p>        
+        <p>E-mail: naumov_advokat@gmail.com</p>
+      </div>
+      <p style="z-index: 5;background-color: black; color: rgb(255, 255, 255); text-align: center;">© 2020 Кирилл Наумов. Номер в реестре адвокатов г. Москвы 77/15352.</p>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="scripts/script.js"></script>
     <script>
       $(document).ready(function() {    
         $("body").css("opacity", "1");
